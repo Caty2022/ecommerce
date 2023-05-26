@@ -1,24 +1,28 @@
 import React from "react";
 import logobaby from "../images/logobaby.webp";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div className="container-fluid">
       <div className="row bg-light p-3">
         <div className="col-md-6">
-          <a href="/">
+          <Link to="/">
             <img src={logobaby} alt="logo" width={35}></img>{" "}
-          </a>
-          <p className="nombrelogo">BabyClothes</p>
+          </Link>
+          <p className="nombrelogo">
+            {" "}
+            <b>BabyClothes</b>
+          </p>
         </div>
         <div className="col-md-6 text-end">
-          <a href="/" className="text-dark text-decoration-none">
+          <Link to="/" className="text-dark text-decoration-none">
             Buscar Tienda
-          </a>{" "}
+          </Link>{" "}
           |{" "}
-          <a href="/" className="text-dark text-decoration-none">
+          <Link to="/" className="text-dark text-decoration-none">
             Ayuda
-          </a>{" "}
+          </Link>{" "}
         </div>
       </div>
     </div>

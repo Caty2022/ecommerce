@@ -1,0 +1,19 @@
+[
+    {"idx":1, "titulo": "Cardigan Marin Tejido", "descripcion": "Cardigan tejido de algodón", "imagen":"https://www.babycottons.com.ar/media/catalog/product/5/1/5123321629_r01_1.jpg?quality=100&fit=bounds&height=1200&width=800", "precio":23900, "categoria": "abrigos", "stock":10},
+    {"idx":2, "titulo": "Tapado Tejido", "descripcion": "Tapado 100% algodón, con botones cruzados. ", "imagen":"https://www.babycottons.com.ar/media/catalog/product/5/1/5123321630_m53_1.jpg?quality=100&fit=bounds&height=1200&width=800", "precio":32900, "categoria": "abrigos", "stock":8},
+    {"idx":3, "titulo": "Sweater Sara Jacquard Tejido", "descripcion": "Sweater tejido de algodón", "imagen":"https://www.babycottons.com.ar/media/catalog/product/5/1/5123321624_g58_1.jpg?quality=100&fit=bounds&height=1200&width=800", "precio":26900, "categoria": "abrigos", "stock": 6},
+    {"idx":4, "titulo": "Pantalon Ana Corderoy", "descripcion": "Pantalon de corderoy con boton en cintura y forreria en jersey. 100% algodón", "imagen":"https://www.babycottons.com.ar/media/catalog/product/3/1/3123321275_p54_1.jpg?quality=100&fit=bounds&height=1200&width=800", "precio":24400, "categoria": "pantalones", "stock":4},
+    {"idx":5, "titulo": "Pantalon John Corderoy", "descripcion": "Pantalon de corderoy con cintura elastizada y forreria en jersey. 100% algodón", "imagen":"https://www.babycottons.com.ar/media/catalog/product/3/1/3123321293_a01_1_1_1_1_1.jpg?quality=100&fit=bounds&height=1200&width=800", "precio":24400, "categoria": "pantalones", "stock": 5},
+    {"idx":6, "titulo": "Pantalon Thor Corderoy", "descripcion": "Pantalon de corderoy con cintura elastizada y forreria en jersey.  100% algodón", "imagen":"https://www.babycottons.com.ar/media/catalog/product/3/1/3123321241_v07_1_1_1_1_1.jpg?quality=100&fit=bounds&height=1200&width=800", "precio":24400, "categoria": "pantalones", "stock": 4},
+    {"idx":7, "titulo": "Pantufla Corderito", "descripcion": "Las pantuflas de corderito ofrecen un calce suave y abrigado para sostener sus pies cómodos.", "imagen":"https://www.babycottons.com.ar/media/catalog/product/z/a/za23321730_b04_2.jpg?quality=100&fit=bounds&height=1200&width=800", "precio":14600, "categoria": "calzado", "stock": 6},
+    {"idx":8, "titulo": "Pantufla Botita", "descripcion": "¡No te preocupes por tus pies congelados este invierno!", "imagen":"https://www.babycottons.com.ar/media/catalog/product/z/a/za00321905_a01_1.jpg?quality=100&fit=bounds&height=1200&width=800", "precio":9900, "categoria": "calzado", "stock": 8},
+    {
+      "idx": 9,
+      "titulo": "Pantufla Bota",
+      "descripcion": "Estas pantuflas tienen elastico para ajustar al talón. Disfrutarán de una comodidad perfecta. ",
+      "imagen": "https://www.babycottons.com.ar/media/catalog/product/z/a/za00321907_r10_1.jpg?quality=100&fit=bounds&height=1200&width=800",
+      "precio": 9900,
+      "categoria": "calzado", "stock": 5
+    }
+
+]

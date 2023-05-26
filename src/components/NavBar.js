@@ -1,5 +1,7 @@
 import React from 'react'
 import CartWidget from './CartWidget';
+import './NavBar.css';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -20,49 +22,49 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="#">
+                <NavLink className="nav-link " aria-current="page" to={'inicio'}>
                   Inicio
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="#">
+                <NavLink className="nav-link " aria-current="page" to={'empresa'}>
                   Empresa
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <NavLink
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  to="/"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Productos
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to={"/categoria/abrigos"}>
                       Abrigos
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to={"/categoria/calzado"}>
                       Calzado
-                    </a>
+                    </NavLink>
                   </li>
 
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to={"/categoria/pantalones"}>
                       Pantalones
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
             </ul>
 
-            <a className="nav-link " aria-current="page" href="#">
+            <NavLink className="nav-link " aria-current="page" to="/">
               <CartWidget /> 
-            </a>
+            </NavLink>
           </div>
         </div>
       </nav>
