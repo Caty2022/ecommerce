@@ -1,8 +1,9 @@
 import React from 'react'
 import { useEffect, useState } from "react";
-import productos from "./json/productos.json";
+//import productos from "./json/productos.json";
 import ItemDetail from './ItemDetail';
 import { useParams } from "react-router-dom";
+import { doc,getFirestore, getDoc } from 'firebase/firestore';
 
 const ItemDetailContainer = () => {
 
@@ -10,7 +11,7 @@ const ItemDetailContainer = () => {
    const { id } = useParams();
 
 
-   useEffect (() =>{
+   /*useEffect (() =>{
     const promesa= new Promise((resolve) =>{
       setTimeout(() =>{
        let producto= productos.find (item =>item.idx=== parseInt(id))
@@ -21,7 +22,16 @@ const ItemDetailContainer = () => {
       setItem(data)
      });
 
-     },[id]);
+     },[id]);*/
+
+     useEffect(() =>{
+      const db = getFirestore();
+      const producto = doc(db, "items", id);
+      getDoc(producto).then(resultado =>{
+        setItem({id:resultado.id, ...resultado.data()})
+      });
+
+     }, [id])
 
   return(
     <>
