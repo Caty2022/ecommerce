@@ -18,7 +18,7 @@ const Item = ({producto}) => {
                 <br />
                 <b>${producto.precio}</b>
               </p>
-              <Link to={"/item/" + producto.idx} className="btn btn-dark">Ver Mas</Link>
+              <Link to={"/item/" + producto.id} className="btn btn-dark">Ver Mas</Link>
             </div>
           </div>
       </div>

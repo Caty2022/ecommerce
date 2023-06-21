@@ -3,14 +3,16 @@ import inicio1 from "../images/inicio1.webp";
 import inicio2 from "../images/inicio2.jpg";
 import inicio3 from "../images/inicio3.jpg";
 import "./Inicio.css"
+import { Link } from "react-router-dom";
+
 
 const Inicio = () => {
   return (
-    <div classNameName="container my-5">
-      <div classNameName="row">
-        <div classNameName="col text-center">
-          <h1 className='titulo'>BabyClothes</h1>
-          <p className='parrafo'>
+    <div className="container my-2">
+      <div className="row">
+        <div className="col text-center">
+          <h1 className="titulo">BabyClothes</h1>
+          <p className="parrafo">
             BabyClothes nace en 1999, cuando su creadora María Paz de la Piedra
             nacida en Perú, desarrolla una marca de indumentaria para bebés y
             niños basada en la calidad única del algodón pima, el cuidado en los
@@ -29,6 +31,14 @@ const Inicio = () => {
         <div className="carousel-inner ">
           <div className="carousel-item active " data-bs-interval="1000">
             <img src={inicio1} className="d-block w-100" alt={inicio1} />
+            <div className="carousel-caption d-none d-md-block">
+              <p>
+                <Link to={"/"} className="btn btn-primary mt3">
+                  
+                  Mostrar más
+                </Link>
+              </p>
+            </div>
           </div>
           <div className="carousel-item" data-bs-interval="2000">
             <img src={inicio2} className="d-block w-100" alt={inicio2} />

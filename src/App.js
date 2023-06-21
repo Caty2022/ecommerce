@@ -9,6 +9,9 @@ import Error404 from './components/Error404';
 import Inicio from './components/Inicio';
 import Locales from './components/Locales';
 import Cart from './components/Cart';
+import CartContextProvider from './components/context/CartContext';
+import Checkout from './components/Checkout';
+import ThankYou from './components/ThankYou';
 
 
 
@@ -19,20 +22,24 @@ import Cart from './components/Cart';
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Header />
-        <NavBar />
-        <Routes>
-          <Route path={"/"} element={<ItemListContainer />}/>
-          <Route path={"/categoria/:id"} element={<ItemListContainer />}/>
-          <Route path={"/item/:id"} element={<ItemDetailContainer />}/>
-          <Route path="/inicio" element={<Inicio />}/>
-          <Route path="/locales" element={<Locales />}/>
-          <Route path="/cart" element={<Cart/>}/>
-          <Route path={"/*"} element={<Error404 />}/>
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <CartContextProvider>
+        <BrowserRouter>
+          <Header />
+          <NavBar />
+          <Routes>
+            <Route path={"/"} element={<ItemListContainer />} />
+            <Route path={"/categoria/:id"} element={<ItemListContainer />} />
+            <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+            <Route path="/inicio" element={<Inicio />} />
+            <Route path="/locales" element={<Locales />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path={"/thankyou/:orderId"} element={<ThankYou/>} />
+            <Route path={"/*"} element={<Error404 />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </CartContextProvider>
     </div>
   );
 }
