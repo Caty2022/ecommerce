@@ -33,8 +33,7 @@ const Inicio = () => {
             <img src={inicio1} className="d-block w-100" alt={inicio1} />
             <div className="carousel-caption d-none d-md-block">
               <p>
-                <Link to={"/"} className="btn btn-primary mt3">
-                  
+                <Link to={"/"} className="btn btn-info mt3">
                   Mostrar más
                 </Link>
               </p>

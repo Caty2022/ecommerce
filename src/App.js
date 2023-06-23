@@ -12,6 +12,9 @@ import Cart from './components/Cart';
 import CartContextProvider from './components/context/CartContext';
 import Checkout from './components/Checkout';
 import ThankYou from './components/ThankYou';
+import Contacto from './components/Contacto';
+import MensajeRecibido from './components/MensajeRecibido';
+
 
 
 
@@ -30,11 +33,13 @@ function App() {
             <Route path={"/"} element={<ItemListContainer />} />
             <Route path={"/categoria/:id"} element={<ItemListContainer />} />
             <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+            <Route path="/contacto" element={<Contacto />} />
             <Route path="/inicio" element={<Inicio />} />
             <Route path="/locales" element={<Locales />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
-            <Route path={"/thankyou/:orderId"} element={<ThankYou/>} />
+            <Route path={"/thankyou/:orderId"} element={<ThankYou />} />
+            <Route path="/mensajerecibido" element={<MensajeRecibido />} />
             <Route path={"/*"} element={<Error404 />} />
           </Routes>
           <Footer />

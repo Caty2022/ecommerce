@@ -17,11 +17,11 @@ const Header = () => {
         </div>
         <div className="col-md-6 text-end">
           <Link to="/" className="text-dark text-decoration-none">
-            Buscar Tienda
+            Tienda
           </Link>{" "}
           |{" "}
-          <Link to="/" className="text-dark text-decoration-none">
-            Ayuda
+          <Link to={"contacto"} className="text-dark text-decoration-none">
+            Contacto
           </Link>{" "}
         </div>
       </div>

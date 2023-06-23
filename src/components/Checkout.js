@@ -58,44 +58,32 @@ const Checkout = () => {
           <form>
             <div className="mb-3">
               <label className="form-label">Nombre</label>
-              <input
-                type="text"
-                className="form-control"
-                onInput={(e) => {
+              <input type="text" className="form-control" onInput={(e) => {
                   setNombre(e.target.value);
                 }}
               />
             </div>
             <div className="mb-3">
               <label className="form-label">Email</label>
-              <input
-                type="text"
-                className="form-control"
-                onInput={(e) => {
+              <input type="text" className="form-control" onInput={(e) => {
                   setEmail(e.target.value);
                 }}
               />
             </div>
             <div className="mb-3">
               <label className="form-label">Teléfono</label>
-              <input
-                type="text"
-                className="form-control"
-                onInput={(e) => {
+              <input type="text" className="form-control" onInput={(e) => {
                   setTelefono(e.target.value);
                 }}
               />
             </div>
-            <button
-              type="button"
-              className="btn btn-light"
-              onClick={generarOrden}
+            <button type="button" className="btn btn-light" onClick={generarOrden}
             >
               Generar Orden
             </button>
           </form>
-        </div>
-        <div className="col-md-5">
+          </div>
+         <div className="col-md-5">
           <table className="table">
             <tbody>
               {cart.map((item) => (

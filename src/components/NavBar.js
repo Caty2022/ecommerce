@@ -61,10 +61,7 @@ const NavBar = () => {
                 </ul>
               </li>
             </ul>
-
-            <NavLink className="nav-link " aria-current="page" to="/">
-              <CartWidget /> 
-            </NavLink>
+            <CartWidget /> 
           </div>
         </div>
       </nav>
