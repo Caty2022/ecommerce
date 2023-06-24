@@ -116,13 +116,21 @@ const Footer = () => {
               </Link>
             </li>
             <li className="ms-3">
-              <Link to="/" className="text-light me-1" target={"_blank"}>
+              <Link
+                to="https://www.instagram.com/"
+                className="text-light me-1"
+                target={"_blank"}
+              >
                 {" "}
                 <img src={instagram} alt={instagram} width={20} />
               </Link>
             </li>
             <li className="ms-3">
-              <Link to="/" className="text-light me-1" target={"_blank"}>
+              <Link
+                to="https://twitter.com/babyclothes097"
+                className="text-light me-1"
+                target={"_blank"}
+              >
                 {" "}
                 <img src={twitter} alt={twitter} width={20} />
               </Link>

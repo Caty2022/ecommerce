@@ -28,37 +28,11 @@ const ItemDetail = ({ producto }) => {
             <b>${item.precio}</b>
           </p>
           <p>
-            <b>Color</b>
+            <h5>Talle</h5>
+            <b>{item.talle}</b>
             <br />
-            <button
-              type="button"
-              className="btn btn-secondary rounded-pill btn-sm"
-            >
-              Gris
-            </button>
-          </p>
-          <br />
-          <p>
-            <b>Talle</b>
-            <br />
-            <button type="button" className="btn btn-outline-secondary btn-sm mb-2">
-              12M
-            </button>
-            <button type="button" className="btn btn-outline-secondary btn-sm mb-2">
-              18M
-            </button>
-            <button type="button" className="btn btn-outline-secondary btn-sm mb-2">
-              24M
-            </button>
-            <button type="button" className="btn btn-outline-secondary btn-sm mb-2">
-              T3
-            </button>
-            <button type="button" className="btn btn-outline-secondary btn-sm mb-2">
-              T4
-            </button>
           </p>
 
-          
           <br />
           <ItemCount stock={item.stock} onAdd={onAdd} />
         </div>

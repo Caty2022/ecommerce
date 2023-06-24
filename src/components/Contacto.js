@@ -1,27 +1,13 @@
 import React from 'react'
 import { useState } from "react";
-import { Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Contacto = () => {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [telefono, setTelefono] = useState("");
-  const [enviarMensaje, setEnviarMensaje] = useState("false");
-
-  const contactoSaludo = () => {
-    if (nombre.length === 0) {
-      return true;
-    }
-
-    if (email.length === 0) {
-      return true;
-    }
-
-    if (telefono.length === 0) {
-      return true;
-    }
-    if (enviarMensaje && <Navigate to={"/mensajerecibido/"} />);
-  };
+  
+  
   return (
     <div className="container my-5">
       <div className="row">
@@ -65,21 +51,15 @@ const Contacto = () => {
               rows="3"
             ></textarea>
             <br></br>
-            <button
-              type="button"
-              className="btn btn-light"
-              onClick={contactoSaludo}
-            >
-              Enviar Mensaje
-            </button>
+            <Link to="/mensajerecibido">
+              <button type="button" className="btn btn-light" >
+                Enviar Mensaje
+              </button>
+            </Link>
           </div>
         </div>
       </div>
-      <div className="row my-5">
-        <div className="col text-center">
-          <Navigate to={"/mensajerecibido/"} />
-        </div>
-      </div>
+      <div className="row my-5"></div>
     </div>
   );
 };
