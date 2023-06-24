@@ -9,7 +9,8 @@ import contactanos from '../images/contactanos.webp';
 import envio from '../images/envio.webp';
 import cuotas from '../images/cuotas.webp';
 import retiro from '../images/retiro.webp';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+
 
 
 
@@ -105,7 +106,11 @@ const Footer = () => {
           <ul className="nav col-md-2 justify-content-end">
             <li className="ms-3">
               {" "}
-              <Link to="/" className="text-light me-1" target={"_blank"}>
+              <Link
+                to="https://www.facebook.com/profile.php?id=100094097557056"
+                className="text-light me-1"
+                target={"_blank"}
+              >
                 {" "}
                 <img src={facebook} alt={facebook} width={20} />
               </Link>
@@ -123,7 +128,11 @@ const Footer = () => {
               </Link>
             </li>
             <li className="ms-3">
-              <Link to="/" className="text-light me-1" target={"_blank"}>
+              <Link
+                to="https://web.whatsapp.com/"
+                className="text-light me-1"
+                target={"_blank"}
+              >
                 {" "}
                 <img src={whatsapp} alt={whatsapp} width={20} />
               </Link>
